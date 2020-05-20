@@ -62,6 +62,7 @@ const Name = styled.span`
 
 const TagLine = styled.div`
   color: #777;
+  font-size: 75px;
 `;
 
 const MyImage = styled.img`
@@ -77,7 +78,7 @@ const App = () => {
       <Name>Taher</Name>
       <MyImage src={MyImageSrc}></MyImage>
       <TagLine>
-        I do stuff at{' '}
+        Doing stuff at{' '}
         <VanilaLogo>
           <a href="https://vanila.io" target="_blank">
             Vanila
@@ -85,7 +86,7 @@ const App = () => {
         </VanilaLogo>
       </TagLine>
       <p>
-        I work on projects like{' '}
+        Working on projects like{' '}
         <a href="https://automatio.co" target="_blank">
           <AutomatioLogo src={AutomatioLogoSrc} alt="Automatio" />
         </a>{' '}
