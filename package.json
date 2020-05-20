@@ -1,0 +1,18 @@
+{
+  "name": "mvp-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "preact": "^10.4.4",
+    "styled-components": "^5.1.0"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
