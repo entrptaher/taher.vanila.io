@@ -39,6 +39,10 @@ const VanilaLogo = styled.span`
   background: linear-gradient(to right, red 0%, crimson 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
+  a{
+    text-decoration: none;
+  }
 `;
 
 const Prefix = styled.div`
@@ -65,12 +69,12 @@ const App = () => {
       <Prefix>Hi There, I'm</Prefix>
       <Name>Taher</Name>
       <TagLine>
-        I do stuff at <VanilaLogo>Vanila</VanilaLogo>
+        I do stuff at <VanilaLogo><a href="https://vanila.io" target="_blank">Vanila</a></VanilaLogo>
       </TagLine>
       <p>
         I work on projects like{' '}
-        <AutomatioLogo src={AutomatioLogoSrc} alt="Automatio" />{' '}
-        <WireflowLogo src={WireflowLogoSrc} alt="Wireflow" />
+        <a href="https://automatio.co" target="_blank"><AutomatioLogo src={AutomatioLogoSrc} alt="Automatio" /></a>{' '}
+        <a href="https://wireflow.co" target="_blank"><WireflowLogo src={WireflowLogoSrc} alt="Wireflow" /></a>
       </p>
     </Container>
   );
