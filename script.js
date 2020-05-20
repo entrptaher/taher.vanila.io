@@ -5,9 +5,10 @@ import styled from 'styled-components';
 import './style.css';
 import AutomatioLogoSrc from './assets/automatio.png';
 import WireflowLogoSrc from './assets/wireflow.png';
+import MyImageSrc from './assets/me.jpeg';
 
 const Container = styled.div`
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto auto;
   background: white;
   height: 100vh;
@@ -39,8 +40,8 @@ const VanilaLogo = styled.span`
   background: linear-gradient(to right, red 0%, crimson 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-  a{
+
+  a {
     text-decoration: none;
   }
 `;
@@ -63,18 +64,34 @@ const TagLine = styled.div`
   color: #777;
 `;
 
+const MyImage = styled.img`
+  float: right;
+  height: 250px;
+  /* clear: both; */
+  border-radius: 10px;
+`;
 const App = () => {
   return (
     <Container>
       <Prefix>Hi There, I'm</Prefix>
       <Name>Taher</Name>
+      <MyImage src={MyImageSrc}></MyImage>
       <TagLine>
-        I do stuff at <VanilaLogo><a href="https://vanila.io" target="_blank">Vanila</a></VanilaLogo>
+        I do stuff at{' '}
+        <VanilaLogo>
+          <a href="https://vanila.io" target="_blank">
+            Vanila
+          </a>
+        </VanilaLogo>
       </TagLine>
       <p>
         I work on projects like{' '}
-        <a href="https://automatio.co" target="_blank"><AutomatioLogo src={AutomatioLogoSrc} alt="Automatio" /></a>{' '}
-        <a href="https://wireflow.co" target="_blank"><WireflowLogo src={WireflowLogoSrc} alt="Wireflow" /></a>
+        <a href="https://automatio.co" target="_blank">
+          <AutomatioLogo src={AutomatioLogoSrc} alt="Automatio" />
+        </a>{' '}
+        <a href="https://wireflow.co" target="_blank">
+          <WireflowLogo src={WireflowLogoSrc} alt="Wireflow" />
+        </a>
       </p>
     </Container>
   );
