@@ -9,11 +9,12 @@ import VanilaCommunitySrc from './assets/vanila-community.png';
 import MyImageSrc from './assets/me.jpeg';
 
 const BodyWrapper = styled.div`
-  height: 100vh;
+  height: 100%;
   margin: auto auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  vertical-align: baseline;
 `;
 
 const Container = styled.div`
@@ -76,6 +77,7 @@ const Name = styled.span`
 const TagLine = styled.div`
   color: #777;
   font-size: 70px;
+  display: inline-block;
 `;
 
 const MyImage = styled.img`
@@ -88,8 +90,10 @@ const App = () => {
   return (
     <BodyWrapper>
       <Container>
+        <div style={{display: 'inline-block'}}>
         <Prefix>Hi There, I'm</Prefix>
         <Name>Taher</Name>
+        </div>
         <MyImage src={MyImageSrc}></MyImage>
         <TagLine>
           Doing stuff at{' '}
@@ -103,15 +107,17 @@ const App = () => {
           <div style={{ marginBottom: '25px' }}>
             Working on cool projects like...
           </div>
-          <a href="https://automatio.co" target="_blank">
-            <AutomatioLogo src={AutomatioLogoSrc} alt="Automatio" />
-          </a>
-          <a href="https://wireflow.co" target="_blank">
-            <WireflowLogo src={WireflowLogoSrc} alt="Wireflow" />
-          </a>
-          <a href="https://community.vanila.io" target="_blank">
-            <CommunityLogo src={VanilaCommunitySrc} />
-          </a>
+          <div className="project_links">
+            <a href="https://automatio.co" target="_blank">
+              <AutomatioLogo src={AutomatioLogoSrc} alt="Automatio" />
+            </a>
+            <a href="https://wireflow.co" target="_blank">
+              <WireflowLogo src={WireflowLogoSrc} alt="Wireflow" />
+            </a>
+            <a href="https://community.vanila.io" target="_blank">
+              <CommunityLogo src={VanilaCommunitySrc} />
+            </a>
+          </div>
         </p>
       </Container>
     </BodyWrapper>

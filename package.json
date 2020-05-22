@@ -8,6 +8,9 @@
   },
   "dependencies": {
     "preact": "^10.4.4",
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0",
+    "react-is": ">= 16.8.0",
     "styled-components": "^5.1.0"
   },
   "alias": {
@@ -16,7 +19,7 @@
     "react-dom": "preact/compat"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "cssnano": "^4.1.10"
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4"
   }
 }
